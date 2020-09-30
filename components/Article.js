@@ -120,6 +120,7 @@ function articleMaker(data) {
   const articleP = document.createElement("p");
   const articlePP = document.createElement("p");
   const articlePPP = document.createElement("p");
+  const articlePPPP = document.createElement("p");
   const articleSpan = document.createElement("span");
 
 
@@ -127,6 +128,7 @@ function articleMaker(data) {
   articleDiv.appendChild(articleP);
   articleDiv.appendChild(articlePP);
   articleDiv.appendChild(articlePPP);
+  articleDiv.appendChild(articlePPPP);
   articleDiv.appendChild(articleSpan);
 
   articleDiv.classList.add("article");
@@ -135,9 +137,10 @@ function articleMaker(data) {
   
   articleSpan.textContent = '+';
   articleTitle.textContent = data.title;
-  articleP.textContent = data.firstParagraph;
-  articlePP.textContent = data.secondParagraph;
-  articlePPP.textContent = data.thirdParagraph;
+  articleP.textContent = data.date;
+  articlePP.textContent = data.firstParagraph;
+  articlePPP.textContent = data.secondParagraph;
+  articlePPPP.textContent.Content = data.thirdParagraph;
 
   articleSpan.addEventListener('click',(event) => {
     articleDiv.classList.toggle('article-open')
